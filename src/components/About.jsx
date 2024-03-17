@@ -1,0 +1,136 @@
+import React from 'react'
+import { Box, Button, Chip, Divider, Stack, Typography } from "@mui/material"
+import contactImage from "../assets/introImage.jpg"
+import nikil from "../assets/nikil.jpg"
+import Typewriter from 'typewriter-effect';
+import { FaFacebookSquare, FaGithub, FaInstagramSquare, FaLinkedin } from 'react-icons/fa';
+import pdfFile from '../assets/pdfFIle/NikilShresthaCV.pdf';
+
+const openPdfInNewTab = () => {
+    window.open(pdfFile, '_blank');
+  };
+  
+const About = () => {
+  return (
+    <Box id="intro" sx={{
+        display: "flex",
+        flexDirection: "row",
+        padding: 11,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundImage: `url(${contactImage})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        gap: 0.3
+    }}>
+        <Box sx={{
+            width: "70vw",
+            height: "75vh",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 10px 25px",
+            backgroundColor: "whitesmoke",
+            borderRadius: 3,
+            padding: 3,
+
+        }}>
+            <img src={nikil} width="300px" height="300px" style={{
+                border: "2px solid #78cc6d",
+                borderRadius: "4px", padding: 5,
+            }} />
+            <Typography sx={{ fontFamily: "poppins", fontWeight: 600, fontSize: "30px",color:"brown" }} >Nikil Shrestha</Typography>
+            <div className='typewriter'>
+                <Typewriter
+                    onInit={(typewriter) => {
+                        typewriter
+                            .typeString("< I am MERN Stack Developer")
+                            .pauseFor(2000)
+                            .deleteAll()
+                            .typeString("Welcome To You..../>")
+                            .start();
+                    }}
+                />
+            </div>
+            <Divider variant="middle" sx={{ padding: 1 }} />
+
+            <Box sx={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: 1,
+                padding: 2
+            }}
+            >
+                <FaFacebookSquare size={24} />
+                <FaInstagramSquare size={24} />
+                <FaLinkedin size={24} />
+                <FaGithub size={24} />
+            </Box>
+
+        </Box>
+
+        {/* =====================================================================
+        */}
+        <Box sx={{
+            display: "flex",
+            flexDirection: "column",
+            height: "70vh",
+            marginTop: 1,
+            padding: 1,
+            boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
+            backgroundColor: "whitesmoke",
+            borderRadius: 2
+        }}>
+            <Stack sx={{display:"flex",flexDirection:"row",padding:2,gap:10}}>
+            <Typography sx={{ fontWeight: 600, fontSize: 20, textAlign: "left"}}>{"< ABOUT ME />"}</Typography>
+            <Chip label="MERN Stack developer" color="success" variant="outlined"/>
+            </Stack>
+
+
+            <Divider variant="middle" />
+
+
+            <Box sx={{ display: "flex", flexDirection: "row", padding: 3 }}>
+                <Typography sx={{
+                    flex: 0.9,
+                    textAlign: "left",
+                }}>I am Nikil Shrestha. I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</Typography>
+
+                <Divider orientation="vertical" flexItem sx={{ padding: 1 }} />
+                <div className='info-list'>
+                    <ul>
+                        <li className='listStyle' style={{ display: "flex", justifyContent: "space-between" }}>
+                            <strong>Age.....</strong>
+                            <Chip label="21" color="success" variant="outlined" />
+                        </li>
+                        <Divider variant="middle" />
+
+                        <li className='listStyle' style={{ display: "flex", justifyContent: "space-between" }}>
+                            <strong>Residence.....</strong>
+                            <Chip label="Nepal" color="success" variant="outlined" />
+
+
+                        </li>
+                        <Divider variant="middle" />
+
+                        <li className='listStyle' style={{ display: "flex", justifyContent: "space-between" }}>
+                            <strong>Address....</strong>
+                            <Chip label="Madhyapur Thimi, Bhaktapur" color="success" variant="outlined" />
+
+
+                        </li>
+                    </ul>
+                </div>
+
+            </Box>
+            <Box sx={{ color: "rgb(0 74 77)", padding: 1, display: "flex", flexDirection: "row", justifyContent: "space-between", }} >
+            <Button variant="contained" sx={{ width: '15vw' }} onClick={openPdfInNewTab}>
+      Check Resume
+    </Button>
+            </Box>
+        </Box>
+
+    </Box>
+  )
+}
+
+export default About

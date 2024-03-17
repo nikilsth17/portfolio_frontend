@@ -1,0 +1,197 @@
+:root {
+  color: black;
+  max-width: 1280px;
+  text-align: center;
+  --font-family: 'Mulish', sans-serif;
+  --font-family-poopins: 'Poppins';
+
+}
+
+
+
+body {
+  font-family: (var(--font-family));
+  margin: 0 auto;
+  padding: 0 auto;
+  font-weight: 400;
+  word-wrap: break-word;
+  letter-spacing: 0px;
+  list-style: 30px;
+  background-color: #60968B;
+
+}
+
+.footer {
+  gap: 2rem;
+  bottom: 0;
+  width: 100%;
+  height: 50vh;
+  background: rgb(0 74 77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.error-message {
+  color: red;
+  text-align: left;
+}
+
+
+.gridStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 25vw;
+  font-size: 70px;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  color: rgb(0 74 77);
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.typewriter {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  color: rgb(0 74 77);
+}
+
+.info-list ul li {
+  display: flex;
+  width: 25vw;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: left;
+}
+
+.listStyle {
+  list-style-type: none;
+  padding: 10px 0;
+
+}
+
+.listStyle strong {
+  padding: 4px;
+  background: #78cc6d;
+  color: antiquewhite;
+}
+
+
+.name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #3b3b3b;
+}
+
+.cardStyle {
+  padding: 10px;
+}
+
+.proggress {
+  margin-top: 10px;
+}
+
+.class {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  color: #3b3b3b;
+
+}
+
+.proggress {
+
+
+  background-color: #78cc6d;
+  height: 8px;
+  border-radius: 5px;
+  width: 90%
+}
+
+
+
+/* css of project.tsx */
+.projectStack {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 6px;
+  height: 50px;
+}
+
+.categorie-item {
+  height: 159px;
+  background: #fff;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+
+
+.categorie-item .ci-text {
+  padding: 15px;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+
+.categorie-item .ci-text h5 {
+  color: #000;
+}
+
+
+.categorie-item:hover {
+  background: rgb(0 74 77);
+  height: 255px;
+}
+
+.categorie-item:hover .ci-text h5,
+.categorie-item:hover .ci-text p {
+  color: #fff;
+}
+
+.categorie-item:hover .ci-text .divider {
+  padding: 5px;
+  color: #fff;
+}
+
+
+
+
+.educationCard{
+  background-color: rgb(0 74 77);
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  -webkit-transition: 0.5s ease border;
+  transition: 0.5s ease border;
+}
+
+.educationCard:hover {
+  border: 1px solid white;
+  -webkit-box-shadow: 0px 0px 5px white;
+  box-shadow: 0px 0px 5px white;
+  -webkit-transition: 0.5s ease border;
+  transition: 0.5s ease border;
+}
