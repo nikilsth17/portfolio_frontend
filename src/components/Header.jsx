@@ -15,7 +15,7 @@ const Header = () => {
         boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"
       }}
       >
-        <Typography sx={{ marginTop: 2,fontSize:"25px",fontStyle:"bold" }}>LAWO</Typography>
+        <Typography sx={{ marginTop: 2,fontSize:"30px",fontStyle:"bold",color:"green" }}>लव</Typography>
         <Box sx={{ gap: "2rem", display: "flex", justifyContent: "center", alignItems: "center" }}>
           <a href='#intro'>
             <Typography>About</Typography>
