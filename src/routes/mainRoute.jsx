@@ -5,6 +5,9 @@ import About from '../components/About'
 import Experience from '../components/Experience'
 import Education from '../components/Education'
 import MainLayout from '../layout/MainLayout'
+import Project from '../components/Project'
+import ReviewSite from '../components/ReviewSite'
+import Contact from '../components/Contact'
 
 export const mainRoute=[
     {
@@ -30,7 +33,20 @@ export const mainRoute=[
           {
             path:"education",
             element:<Education/>
+          },
+          {
+            path:"project",
+            element: <Project/>
+          },
+          {
+            path:"reviewSite",
+            element: <ReviewSite/>
+          },
+          {
+            path:"contact",
+            element:<Contact/>
           }
+
 
      
         ]

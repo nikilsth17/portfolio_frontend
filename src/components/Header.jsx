@@ -12,10 +12,10 @@ const Header = () => {
         color: "black",
         zIndex: 997,
         transition: "all 0.5s ease",
-        boxShadow: "rgba(0, 0, 0, 0.35) 0px -50px 30px -40px inset"
+        boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"
       }}
       >
-        <Typography sx={{ marginTop: 3 }}>Portfolio</Typography>
+        <Typography sx={{ marginTop: 2,fontSize:"25px",fontStyle:"bold" }}>LAWO</Typography>
         <Box sx={{ gap: "2rem", display: "flex", justifyContent: "center", alignItems: "center" }}>
           <a href='#intro'>
             <Typography>About</Typography>
