@@ -2,10 +2,10 @@ import axios from "axios";
 
 
 const $axios= axios.create({
-    baseURL:"http://localhost:8000",
+    baseURL:"https://portfolio-backend-m4t7.onrender.com",
     timeout: 5000,
 });
 
 
-export const BASEURL="http://localhost:8000"
+export const BASEURL="https://portfolio-backend-m4t7.onrender.com"
 export {$axios};
