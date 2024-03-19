@@ -10,10 +10,6 @@ const MainLayout = () => {
     <>
     <CustomSnackbar/>
     <Header/>
-     {/* <Box sx={{minHeight:"90vh",backgroundColor:"white"}}>
-      <Outlet/>
-
-      </Box> */}
       <Home/>
       <Footer/>
     </>

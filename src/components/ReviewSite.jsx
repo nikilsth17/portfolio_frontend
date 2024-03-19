@@ -85,16 +85,16 @@ const ReviewSite = () => {
         sx={{
           background: "whitesmoke",
           marginTop: 4,
-          marginLeft: 18,
+          marginLeft: {xs:-10,lg:18},
           display: "flex",
-          flexDirection: "row",
+          flexDirection: {xs:"column",lg:"row"},
           alignItems: "center",
           justifyContent: "center",
-          width: "63vw",
-          boxShadow: "  rgb(48, 59, 48) 10px 0px 20px",
+          width: {lg:"63vw",xs:"100vw"},
+          boxShadow: {lg:"  rgb(48, 59, 48) 10px 0px 20px",xs:"none"}
         }}
       >
-        <Box sx={{ padding: 3 }}>
+        <Box sx={{ padding:{lg:3,xs:1} }}>
           <Grid className="gridStyle">
             <Typography variant="h6">UI/UX design:</Typography>
             <Rating
@@ -196,13 +196,13 @@ const ReviewSite = () => {
           </Button>
         </Box>
         <Divider orientation="vertical" variant="middle" flexItem />
-        <Box sx={{ padding: 2 }}>
+        <Box sx={{ padding: 2,width:{xs:"100vw",lg:"none"} }}>
           <form
             style={{
               padding: 9,
               gap: 6,
               height: "40vh",
-              width: "30vw",
+              width:{lg:"30vw",xs:"100vw"},
               display: "flex",
               flexDirection: "column",
               backgroundColor: "whitesmoke",

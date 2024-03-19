@@ -29,12 +29,12 @@ const Contact = () => {
       },
     });
   return (
-    <Box id="contact" sx={{ padding: 9,backgroundColor:"whitesmoke" }}>
+    <Box id="contact" sx={{ padding:{lg:9,xs:1},backgroundColor:"whitesmoke" }}>
     <h1>Contact</h1>
     <div className="bor-btm-section-header"></div>
     <h3>Feel free to reach out to me for any questions or opportunities!</h3>
 
-    <Box sx={{ gap: 5, display: "flex", flexDirection: "row" }}>
+    <Box sx={{ gap:{lg:5,xs:2}, display: "flex", flexDirection: {lg:"row",mb:"row",xs:"column"} }}>
       <Container sx={{ gap: 4, }}>
         <Box sx={{ display: "flex", flexDirection: "row", padding: 2, gap: 2 }}>
           <Avatar variant="rounded" sx={{ bgcolor: "#243B55", width: 75, height: 75, }}>
@@ -59,12 +59,11 @@ const Contact = () => {
       <Container>
         <Box
           sx={{
-            width: "400px",
+            width:{lg:"400px",xs:"300px"},
             minHeight: "400px",
-            borderRadius: "10px",
+            borderRadius: {lg:"10px",xs:"none"},
             margin: "auto",
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+            boxShadow:"rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
             padding: "2rem",
             display: "flex",
             flexDirection: "column",

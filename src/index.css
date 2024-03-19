@@ -1,24 +1,25 @@
 :root {
-  color: black;
-  max-width: 1280px;
-  text-align: center;
+  --primary-color: black;
+  /* Define your primary color variable */
   --font-family: 'Mulish', sans-serif;
-  --font-family-poopins: 'Poppins';
-
+  --font-family-poppins: 'Poppins';
 }
 
-
-
 body {
-  font-family: (var(--font-family));
-  margin: 0 auto;
-  padding: 0 auto;
+  font-family: var(--font-family);
+  /* Use the defined font-family variable */
+  margin: 0;
+  /* Simplified margin */
+  padding: 0;
+  /* Simplified padding */
   font-weight: 400;
+  text-align: center;
   word-wrap: break-word;
   letter-spacing: 0px;
-  list-style: 30px;
-  background-color: #60968B;
-
+  list-style: none;
+  /* Changed list-style to none */
+  color: var(--primary-color);
+  /* Use the defined primary color variable */
 }
 
 .footer {
@@ -44,8 +45,15 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 25vw;
+  width: 80vw;
   font-size: 70px;
+
+  /* Responsive font sizes */
+  @media (min-width: 1280px) {
+    /* lg breakpoint */
+    font-size: 70px;
+    width: 24vw;
+  }
 
 }
 
@@ -82,7 +90,10 @@ a:hover {
 
 .listStyle {
   list-style-type: none;
-  padding: 10px 0;
+
+  padding: {
+    lg: 10px 0, xs:5px 0
+  }
 
 }
 
@@ -179,7 +190,7 @@ a:hover {
 
 
 
-.educationCard{
+.educationCard {
   background-color: rgb(0 74 77);
   text-align: center;
   border: 1px solid transparent;
