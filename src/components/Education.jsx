@@ -32,10 +32,10 @@ const Education = () => {
   return (
     <ThemeProvider theme={theme}>
       <Box id="education" sx={{ padding: { xs: 3, lg: 9 }, backgroundColor: "whitesmoke" }}>
-        <Typography variant="h2" align="center" gutterBottom sx={{ color: "#000" }}>
+        <Typography variant="h5" align="center" gutterBottom sx={{ color: "#000" }}>
           {'<Education/>'}
         </Typography>
-        <Timeline position={isLargeScreen ? "alternate" : "right"} sx={{marginLeft:{xs:-7}}}>
+        <Timeline position={isLargeScreen ? "alternate" : "right"} sx={{marginLeft:{xs:-7,lg:"none",md:0}}}>
           {isLoading ? (
             <p>Loading...</p>
           ) : (
@@ -45,7 +45,7 @@ const Education = () => {
                   <Chip label={item?.date} sx={{ marginTop: 1 }} />
                 )}
                 <TimelineSeparator>
-                  <TimelineDot color="success" sx={{ marginTop: 2, padding:{lg:1.5,xs:"none"} }} />
+                  <TimelineDot color="success" sx={{ marginTop: 2, padding:{lg:1,xs:"none"} }} />
                   <TimelineConnector sx={{ background: " rgb(0 74 77)" }} />
                 </TimelineSeparator>
                 <TimelineContent>

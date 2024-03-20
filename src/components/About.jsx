@@ -22,14 +22,15 @@ const About = () => {
       sx={{
         display: "flex",
         flexDirection: {xs:"column",md:"row"},
-        padding: {xs:17,md:20,lg:9},
+        padding: {xs:"none",md:"none",lg:9},
+        paddingTop:{lg:"none",md:15,xs:15},
         justifyContent: "center",
         alignItems: "center",
         backgroundImage: `url(${contactImage})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         gap: 0.3,
-        height:{lg:"none",xs:"90vh"}
+        height:{lg:"none",xs:"100vh"}
       }}
     >
       <Box
@@ -100,8 +101,8 @@ const About = () => {
         sx={{
             width:{lg:"none",xs:"95vw"},
           display: "flex",
-          // flexDirection: "column",
-          flexWrap:"wrap",
+          flexDirection: "column",
+          flexWrap:{lg:"none",xs:"wrap"},
           height: "70vh",
           // marginTop: 1,
           padding: 1,
@@ -122,8 +123,8 @@ const About = () => {
             variant="outlined"
           />
         </Stack>
-
         <Divider variant="middle" />
+
 
         <Box sx={{ display: "flex", flexDirection:{lg:"row",xs:"column"}, padding: {lg:2,xs:1} }}>
           <Typography
@@ -180,12 +181,11 @@ const About = () => {
             padding: 1,
             display: "flex",
             flexDirection: "row",
-            justifyContent: {lg:"space-between",xs:"none"}
           }}
         >
           <Button
             variant="contained"
-            sx={{ width:{lg:"15vw",xs:"40vw"} }}
+            sx={{ width:{lg:"15vw",xs:"40vw"}}}
             onClick={openPdfInNewTab}
           >
             Check Resume

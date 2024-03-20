@@ -55,7 +55,7 @@ const Testimonial = () => {
 
     return (
         <Box sx={{ padding: { xs: 2, lg: 5 }, backgroundColor: "whitesmoke" }}>
-            <h1>{'< Review />'}</h1>
+            <h1>{'< Testimonials />'}</h1>
             {isLoading ? (
                 <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '50vh' }}>
                     <CircularProgress />
@@ -69,9 +69,9 @@ const Testimonial = () => {
                     <Slider {...settings}>
                         {ratings.map((item) => (
                             <Card key={item.id} sx={{
-                                margin: '0 10px',
+                                margin: {lg:"0 10px",xs:"0 2px"},
                                 minHeight: "50vh",
-                                transform: "scale(0.9)",
+                                transform: "scale(0.95)",
                                 boxShadow: "rgba(0, 0, 0, 0.35)",
                             }}>
                                 <CardActionArea>

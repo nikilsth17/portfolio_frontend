@@ -9,8 +9,8 @@ const openPdfInNewTab = () => {
 
 const Experience = () => {
   return (
-    <Box id="experience" sx={{ padding: { xs: 2, md: 9 }, background: "red" }}>
-      <Typography variant="h4" align="center" gutterBottom sx={{ color: "#fff" }}>
+    <Box id="experience" sx={{ padding: {xs:1,lg:9, md: 9 }, background: "red" }}>
+      <Typography variant="h4" align="center" gutterBottom>
         Experience
       </Typography>
       <Card sx={{

@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Box, Button, Typography } from "@mui/material";
+import { AppBar, Box, Button, Typography,Divider } from "@mui/material";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -34,7 +34,8 @@ const Header = (props) => {
         flexDirection: "row",
         justifyContent: "space-around", // Changed from "space-around" to "space-between"
         alignItems: "center", // Added to vertically center items
-        height: "70px",
+        // height: "70px",
+        padding:2,
         backgroundColor: "whitesmoke",
         color: "black",
         boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
@@ -105,9 +106,9 @@ const Header = (props) => {
           "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
         }}
       >
-        <Box sx={{ p: 2,gap:5 }}>
+        <Box sx={{ p: 1,gap:15 }}>
           <Typography
-            variant="h3"
+            variant="h2"
             sx={{
               fontWeight: "bold", // Changed from "fontStyle" to "fontWeight"
               color: "green",
@@ -116,24 +117,34 @@ const Header = (props) => {
           >
             लव
           </Typography>
-          <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <Box sx={{ display: "flex", flexDirection: "column",gap:2}}>
             <a href="#intro" onClick={handleDrawerClose}>
-              <Typography>About</Typography>
+              <Typography variant="h5">About</Typography>
             </a>
+            <Divider variant="middle" />
+
             <a href="#skills" onClick={handleDrawerClose}>
-              <Typography>Skills</Typography>
+              <Typography variant="h5">Skills</Typography>
             </a>
+            <Divider variant="middle" />
+
             <a href="#experience" onClick={handleDrawerClose}>
-              <Typography>Experience</Typography>
+              <Typography variant="h5">Experience</Typography>
             </a>
+            <Divider variant="middle" />
+
             <a href="#project" onClick={handleDrawerClose}>
-              <Typography>Projects</Typography>
+              <Typography variant="h5">Project</Typography>
             </a>
+            <Divider variant="middle" />
+
             <a href="#education" onClick={handleDrawerClose}>
-              <Typography>Education</Typography>
+              <Typography variant="h5">Education</Typography>
             </a>
+            <Divider variant="middle" />
+
             <a href="#contact" onClick={handleDrawerClose}>
-              <Typography>Contact</Typography>
+              <Typography variant="h5">Contact</Typography>
             </a>
           </Box>
         </Box>

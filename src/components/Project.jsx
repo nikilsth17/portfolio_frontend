@@ -6,9 +6,9 @@ import ecommerceImage from "../assets/projectImage/ecommerce.png"
 
 const Project = () => {
   return (
-    <Box id="project" sx={{ padding:{md:9,xs:0},backgroundColor:"whitesmoke" }}>
+    <Box id="project" sx={{ padding:{md:9,xs:2,lg:9},backgroundColor:"whitesmoke" }}>
     <h2>My Project</h2>
-    <Box sx={{ display: "flex",flexDirection:{md:"row",xs:"column"}, gap: {md:3,xs:1}}}>
+    <Box sx={{ display: "flex",flexDirection:{md:"row",xs:"column"}, gap: {lg:1,xs:1}}}>
 
       <Card sx={{ width:{lg:350,xs:"100%"},boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"}}>
         <div >
