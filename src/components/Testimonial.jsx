@@ -22,10 +22,9 @@ const Testimonial = () => {
 
     const settings = {
       dots: true,
-      infinite: false,
+      infinite: true,
       speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToShow: 3,
       initialSlide: 0,
       responsive: [
         {
@@ -49,14 +48,13 @@ const Testimonial = () => {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 5
           }
         }
       ]
     };
 
     return (
-        <Box sx={{ padding: { xs: 2, md: 5 }, backgroundColor: "whitesmoke" }}>
+        <Box sx={{ padding: { xs: 2, lg: 5 }, backgroundColor: "whitesmoke" }}>
             <h1>{'< Review />'}</h1>
             {isLoading ? (
                 <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '50vh' }}>
@@ -73,7 +71,7 @@ const Testimonial = () => {
                             <Card key={item.id} sx={{
                                 margin: '0 10px',
                                 minHeight: "50vh",
-                                transform: "scale(0.95)",
+                                transform: "scale(0.9)",
                                 boxShadow: "rgba(0, 0, 0, 0.35)",
                             }}>
                                 <CardActionArea>
@@ -101,8 +99,9 @@ const Testimonial = () => {
                                         <ImQuotesRight color='#195a34' size={25} style={{}} />
                                     </Box>
 
-                                    <Box sx={{ display: "flex", flexDirection: "column", padding: 2, color: "white", backgroundColor: "#60968B", borderRadius: "10px" }}>
-                                        <Avatar sx={{ width: 55, height: 55, marginTop: 2, backgroundColor: "whitesmoke", color: "black", alignSelf: "center" }}>
+                                    <Box sx={{ display: "flex", flexDirection:{lg:"row",xs:"row"}, padding: 2, color: "white", backgroundColor: "#60968B", borderRadius: "10px" }}>
+
+                                        <Avatar sx={{ width: 55, height: 55, backgroundColor: "whitesmoke", color: "black", alignSelf: "center" }}>
                                             {item.shortName || ''}
                                         </Avatar>
                                         <CardContent sx={{ textAlign: "center" }}>

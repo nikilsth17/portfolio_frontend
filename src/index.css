@@ -12,7 +12,7 @@ body {
   /* Simplified margin */
   padding: 0;
   /* Simplified padding */
-  font-weight: 400;
+  font-weight: 100;
   text-align: center;
   word-wrap: break-word;
   letter-spacing: 0px;
@@ -20,7 +20,13 @@ body {
   /* Changed list-style to none */
   color: var(--primary-color);
   /* Use the defined primary color variable */
+   /* Responsive font sizes */
+   @media (min-width: 1280px) {
+    /* lg breakpoint */
+     font-weight: 400;
+   }
 }
+
 
 .footer {
   gap: 2rem;
@@ -49,8 +55,8 @@ body {
   font-size: 70px;
 
   /* Responsive font sizes */
-  @media (min-width: 1280px) {
-    /* lg breakpoint */
+   @media (min-width: 1280px) {
+   /* lg breakpoint */
     font-size: 70px;
     width: 24vw;
   }
@@ -73,27 +79,38 @@ a:hover {
 
 .typewriter {
   font-family: monaco, Consolas, "Lucida Console", monospace;
-  font-size: 20px;
+  font-size: 10px;
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
   color: rgb(0 74 77);
+   /* Responsive font sizes */
+   @media (min-width: 1280px) {
+    /* lg breakpoint */
+     font-size: 20px;
+   }
 }
 
 .info-list ul li {
   display: flex;
-  width: 25vw;
+  width:100%;
   /* background-color: red; */
   align-items: center;
   justify-content: left;
+  @media (min-width: 1280px) {
+    /* lg breakpoint */
+     width: 25vw;
+   }
 }
 
 .listStyle {
   list-style-type: none;
 
-  padding: {
-    lg: 10px 0, xs:5px 0
-  }
+  /* padding: 5px 0; */
+  @media (min-width: 1280px) {
+    /* lg breakpoint */
+     padding: 10px 0;
+   }
 
 }
 

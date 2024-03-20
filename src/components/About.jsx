@@ -22,19 +22,19 @@ const About = () => {
       sx={{
         display: "flex",
         flexDirection: {xs:"column",md:"row"},
-        padding: {xs:10,lg:9},
+        padding: {xs:17,md:20,lg:9},
         justifyContent: "center",
         alignItems: "center",
         backgroundImage: `url(${contactImage})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         gap: 0.3,
-        height:{lg:"none",xs:"100vh"}
+        height:{lg:"none",xs:"90vh"}
       }}
     >
       <Box
         sx={{
-          width:{lg:"70vw",xs:"80vw"},
+          width:{lg:"40vw",xs:"80vw"},
           height: {lg:"75vh",xs:"50vh"},
 
           boxShadow: "rgba(0, 0, 0, 0.35) 0px 10px 25px",
@@ -98,11 +98,12 @@ const About = () => {
        */}
       <Box
         sx={{
-            width:{lg:"none",xs:"100vw"},
+            width:{lg:"none",xs:"95vw"},
           display: "flex",
-          flexDirection: "column",
+          // flexDirection: "column",
+          flexWrap:"wrap",
           height: "70vh",
-          marginTop: 1,
+          // marginTop: 1,
           padding: 1,
           boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
           backgroundColor: "whitesmoke",
@@ -124,10 +125,10 @@ const About = () => {
 
         <Divider variant="middle" />
 
-        <Box sx={{ display: "flex", flexDirection: "row", padding: {lg:3,xs:1} }}>
+        <Box sx={{ display: "flex", flexDirection:{lg:"row",xs:"column"}, padding: {lg:2,xs:1} }}>
           <Typography
             sx={{
-              flex: {lg:0.9,xs:1},
+              flex:0.9,
               textAlign: "left",
             }}
           >

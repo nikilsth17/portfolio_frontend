@@ -68,8 +68,8 @@ const ReviewSite = () => {
 
   return (
     <Box sx={{ padding: 9, backgroundColor: "whitesmoke", color: "black" }}>
-      <Typography variant="h5">Review Portfolio Website</Typography>
-      <div className="typewriter" style={{ padding: 10 }}>
+      <Typography sx={{fontSize:{lg:"20px",xs:"15px"}}}>Review Portfolio Website</Typography>
+      <div className="typewriter" style={{ padding: {lg:10,xs:2} }}>
         <Typewriter
           options={{
             strings: [
@@ -84,7 +84,7 @@ const ReviewSite = () => {
       <Box
         sx={{
           background: "whitesmoke",
-          marginTop: 4,
+          marginTop:{lg:4,xs:"none"},
           marginLeft: {xs:-10,lg:18},
           display: "flex",
           flexDirection: {xs:"column",lg:"row"},
@@ -96,7 +96,7 @@ const ReviewSite = () => {
       >
         <Box sx={{ padding:{lg:3,xs:1} }}>
           <Grid className="gridStyle">
-            <Typography variant="h6">UI/UX design:</Typography>
+            <Typography >UI/UX design:</Typography>
             <Rating
               name="design"
               value={ratings.design}
@@ -113,7 +113,7 @@ const ReviewSite = () => {
           </Grid>
 
           <Grid className="gridStyle">
-            <Typography variant="h6">Functionality:</Typography>
+            <Typography >Functionality:</Typography>
             <Rating
               className="ratingStyle"
               name="functionality"
@@ -131,7 +131,7 @@ const ReviewSite = () => {
           </Grid>
 
           <Grid className="gridStyle">
-            <Typography variant="h6">Responsiveness:</Typography>
+            <Typography >Responsiveness:</Typography>
             <Rating
               className="ratingStyle"
               name="responsiveness"
@@ -149,7 +149,7 @@ const ReviewSite = () => {
           </Grid>
 
           <Grid className="gridStyle">
-            <Typography variant="h6">Performance:</Typography>
+            <Typography >Performance:</Typography>
             <Rating
               className="ratingStyle"
               name="performance"
@@ -167,7 +167,7 @@ const ReviewSite = () => {
           </Grid>
 
           <Grid className="gridStyle">
-            <Typography variant="h6">Content Quality:</Typography>
+            <Typography>Content Quality:</Typography>
             <Rating
               className="ratingStyle"
               name="contentQuality"
@@ -184,7 +184,7 @@ const ReviewSite = () => {
             />
           </Grid>
 
-          <Typography variant="h6" className="gridStyle">
+          <Typography className="gridStyle">
             Total Rating:{totalRating !== null && `${totalRating}`}
           </Typography>
           <Button
@@ -199,9 +199,9 @@ const ReviewSite = () => {
         <Box sx={{ padding: 2,width:{xs:"100vw",lg:"none"} }}>
           <form
             style={{
-              padding: 9,
-              gap: 6,
-              height: "40vh",
+              padding:{lg:9,xs:1},
+              gap: {lg:6,xs:2},
+              height: {lg:"40vh",xs:"10vh"},
               width:{lg:"30vw",xs:"100vw"},
               display: "flex",
               flexDirection: "column",
