@@ -21,23 +21,22 @@ const About = () => {
       id="intro"
       sx={{
         display: "flex",
-        flexDirection: {xs:"column",md:"row"},
-        padding: {xs:"none",md:"none",lg:5},
-        paddingTop:{lg:"none",md:20,xs:15},
+        flexDirection: { xs: "column", md: "row" },
+        padding: { xs: "none", md: "none", lg: 5 },
+        paddingTop: { lg: "none", md: 20, xs: 15 },
         justifyContent: "center",
         alignItems: "center",
         backgroundImage: `url(${contactImage})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         gap: 0.3,
-        height:{lg:"none",xs:"100vh"},
-        
+        height: { lg: "none", xs: "100vh" },
       }}
     >
       <Box
         sx={{
-          width:{lg:"40vw",xs:"80vw"},
-          height: {lg:"75vh",xs:"63vh"},
+          width: { lg: "40vw", xs: "80vw" },
+          height: { lg: "75vh", xs: "63vh" },
 
           boxShadow: "rgba(0, 0, 0, 0.35) 0px 10px 25px",
           backgroundColor: "whitesmoke",
@@ -52,7 +51,7 @@ const About = () => {
           style={{
             border: "2px solid #78cc6d",
             borderRadius: "4px",
-            padding: {lg:5,xs:2,md:1}
+            padding: { lg: 5, xs: 2, md: 1 },
           }}
         />
         <Typography
@@ -67,13 +66,11 @@ const About = () => {
         </Typography>
         <div className="typewriter">
           <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("< I am MERN Stack Developer")
-                .pauseFor(2000)
-                .deleteAll()
-                .typeString("Welcome To You..../>")
-                .start();
+            options={{
+              strings: ["<I am MERN Stack Developer", "Welcome To You..../>"],
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 80, // Speed at which characters are deleted (optional)
             }}
           />
         </div>
@@ -85,8 +82,10 @@ const About = () => {
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "center",
-            gap: 1,
-            padding: 2,
+            gap: 2,
+            padding: 1,
+            color:" rgb(0 74 77)",
+            cursor:"pointer"
           }}
         >
           <FaFacebookSquare size={24} />
@@ -100,10 +99,10 @@ const About = () => {
        */}
       <Box
         sx={{
-            width:{lg:"none",xs:"95vw"},
+          width: { lg: "none", xs: "95vw" },
           display: "flex",
           flexDirection: "column",
-          flexWrap:{lg:"none",xs:"wrap"},
+          flexWrap: { lg: "none", xs: "wrap" },
           height: "70vh",
           // marginTop: 1,
           padding: 1,
@@ -113,9 +112,20 @@ const About = () => {
         }}
       >
         <Stack
-          sx={{ display: "flex", flexDirection: "row", padding: {lg:2,xs:1}, gap: {lg:10,xs:5} }}
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            padding: { lg: 2, xs: 1 },
+            gap: { lg: 10, xs: 5 },
+          }}
         >
-          <Typography sx={{ fontWeight: 600, fontSize:{lg:20,xs:15}, textAlign: "left" }}>
+          <Typography
+            sx={{
+              fontWeight: 600,
+              fontSize: { lg: 20, xs: 15 },
+              textAlign: "left",
+            }}
+          >
             {"< ABOUT ME />"}
           </Typography>
           <Chip
@@ -126,11 +136,16 @@ const About = () => {
         </Stack>
         <Divider variant="middle" />
 
-
-        <Box sx={{ display: "flex", flexDirection:{lg:"row",xs:"column"}, padding: {lg:2,xs:1} }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { lg: "row", xs: "column" },
+            padding: { lg: 2, xs: 1 },
+          }}
+        >
           <Typography
             sx={{
-              flex:0.9,
+              flex: 0.9,
               textAlign: "left",
             }}
           >
@@ -186,7 +201,7 @@ const About = () => {
         >
           <Button
             variant="contained"
-            sx={{ width:{lg:"15vw",xs:"40vw"}}}
+            sx={{ width: { lg: "15vw", xs: "40vw" } }}
             onClick={openPdfInNewTab}
           >
             Check Resume

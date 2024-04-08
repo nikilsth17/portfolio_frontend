@@ -4,10 +4,10 @@ import Skill from '../components/Skill'
 import About from '../components/About'
 import Experience from '../components/Experience'
 import Education from '../components/Education'
-import MainLayout from '../layout/MainLayout'
 import Project from '../components/Project'
 import ReviewSite from '../components/ReviewSite'
 import Contact from '../components/Contact'
+import MainLayout from '../layout/MainLayout'
 
 export const mainRoute=[
     {
