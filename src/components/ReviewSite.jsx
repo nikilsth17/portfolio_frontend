@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import {openErrorSnackbar, openSuccessSnackbar } from '../store/slice/snackbarSlice';
 import Typewriter from 'typewriter-effect';
 import { BASEURL } from "../lib/axios";
+import leadspace from "../assets/leadspace.png"
 
 const ReviewSite = () => {
   const dispatch = useDispatch();
@@ -67,7 +68,9 @@ const ReviewSite = () => {
   };
 
   return (
-    <Box sx={{ padding: 9, backgroundColor: "whitesmoke", color: "black" }}>
+    <Box sx={{ padding: 9, color: "black",     backgroundImage: `url(${leadspace})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat", }}>
       <Typography sx={{fontSize:{lg:"20px",xs:"15px"}}}>Review Portfolio Website</Typography>
       <div className="typewriter" style={{ padding: {lg:10,xs:2} }}>
         <Typewriter
@@ -202,7 +205,7 @@ const ReviewSite = () => {
               padding:{lg:9,xs:1},
               gap: {lg:6,xs:2},
               height: {lg:"40vh",xs:"10vh"},
-              width:{lg:"30vw",xs:"100vw"},
+              width:{lg:"10vw",xs:"100vw"},
               display: "flex",
               flexDirection: "column",
               backgroundColor: "whitesmoke",

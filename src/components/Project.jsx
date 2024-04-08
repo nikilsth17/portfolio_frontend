@@ -8,7 +8,7 @@ const Project = () => {
   return (
     <Box id="project" sx={{ padding:{md:9,xs:2,lg:9},backgroundColor:"whitesmoke" }}>
     <h2>My Project</h2>
-    <Box sx={{ display: "flex",flexDirection:{md:"row",xs:"column"}, gap: {lg:1,xs:1}}}>
+    <Box sx={{ display: "flex",flexDirection:{md:"row",xs:"column"}, gap: {lg:1,xs:1,md:4}}}>
 
       <Card sx={{ width:{lg:350,xs:"100%"},boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"}}>
         <div >
@@ -35,7 +35,10 @@ const Project = () => {
               </Typography>
 
             </div>
+            <a href=''>
             <Button color='success' variant='contained'>Show Code</Button>
+
+            </a>
 
 
           </div>
@@ -78,7 +81,10 @@ const Project = () => {
               </Typography>
 
             </div>
+            <a href='https://github.com/nikilsth17/Todo-project' target="_blank">
             <Button color='success' variant='contained'>Show Code</Button>
+
+            </a>
 
 
           </div>
@@ -118,7 +124,10 @@ const Project = () => {
               </Typography>
 
             </div>
+            <a href='https://github.com/nikilsth17/E-commerce-Web-app' target='_blank'>
             <Button color='success' variant='contained'>Show Code</Button>
+
+            </a>
 
 
           </div>

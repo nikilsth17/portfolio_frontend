@@ -22,21 +22,22 @@ const About = () => {
       sx={{
         display: "flex",
         flexDirection: {xs:"column",md:"row"},
-        padding: {xs:"none",md:"none",lg:9},
-        paddingTop:{lg:"none",md:15,xs:15},
+        padding: {xs:"none",md:"none",lg:5},
+        paddingTop:{lg:"none",md:20,xs:15},
         justifyContent: "center",
         alignItems: "center",
         backgroundImage: `url(${contactImage})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         gap: 0.3,
-        height:{lg:"none",xs:"100vh"}
+        height:{lg:"none",xs:"100vh"},
+        
       }}
     >
       <Box
         sx={{
           width:{lg:"40vw",xs:"80vw"},
-          height: {lg:"75vh",xs:"50vh"},
+          height: {lg:"75vh",xs:"63vh"},
 
           boxShadow: "rgba(0, 0, 0, 0.35) 0px 10px 25px",
           backgroundColor: "whitesmoke",
@@ -51,7 +52,7 @@ const About = () => {
           style={{
             border: "2px solid #78cc6d",
             borderRadius: "4px",
-            padding: 5,
+            padding: {lg:5,xs:2,md:1}
           }}
         />
         <Typography

@@ -55,7 +55,7 @@ const Testimonial = () => {
 
     return (
         <Box sx={{ padding: { xs: 2, lg: 5 }, backgroundColor: "whitesmoke" }}>
-            <h1>{'< Testimonials />'}</h1>
+            <h2>{'< Testimonials />'}</h2>
             {isLoading ? (
                 <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '50vh' }}>
                     <CircularProgress />

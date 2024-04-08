@@ -31,8 +31,8 @@ const Education = () => {
   const isSmallScreen= useMediaQuery(theme.breakpoints.up('xs'));
   return (
     <ThemeProvider theme={theme}>
-      <Box id="education" sx={{ padding: { xs: 3, lg: 9 }, backgroundColor: "whitesmoke" }}>
-        <Typography variant="h5" align="center" gutterBottom sx={{ color: "#000" }}>
+      <Box id="education" sx={{ padding: {lg:9,md:3,xs:1}, backgroundColor: "whitesmoke" }}>
+        <Typography variant="h4" align="center" gutterBottom sx={{ color: "#000" }}>
           {'<Education/>'}
         </Typography>
         <Timeline position={isLargeScreen ? "alternate" : "right"} sx={{marginLeft:{xs:-7,lg:"none",md:0}}}>

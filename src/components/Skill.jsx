@@ -7,7 +7,10 @@ const Skill = () => {
       id="skills"
       sx={{
         alignItems: "center",
-        padding: {lg:9,xs:1},
+        padding: { xs: "none", md: "none", lg: 9 },
+
+        paddingTop: { lg: "none", md: 20, xs: 5 },
+
         backgroundColor: "whitesmoke",
       }}
     >
@@ -19,7 +22,7 @@ const Skill = () => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: {md:"row",xs:"column"},
+          flexDirection: { md: "row", xs: "column" },
           justifyContent: "center",
           alignItems: "center",
         }}
@@ -30,8 +33,8 @@ const Skill = () => {
               xs: "80vw",
               lg: 315,
             },
-            padding:5,
-            margin: {lg:5,xs:1}
+            padding: 5,
+            margin: { lg: 5, xs: 1 },
           }}
         >
           <div id="HTML" className="cardStyle">
@@ -103,11 +106,17 @@ const Skill = () => {
             </div>
           </div>
         </Card>
-        <Card sx={{  width: {
+        <Card
+          sx={{
+            width: {
               xs: "80vw",
               sm: "25vw",
-              ls:315
-            }, padding: 5, margin:{lg:5,xs:1} }}>
+              ls: 315,
+            },
+            padding: 5,
+            margin: { lg: 5, xs: 1 },
+          }}
+        >
           <div id="Node js" className="cardStyle">
             <div className="class">
               <span className="class">Node JS</span>

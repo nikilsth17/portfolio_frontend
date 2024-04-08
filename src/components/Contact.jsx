@@ -59,7 +59,7 @@ const Contact = () => {
       <Container>
         <Box
           sx={{
-            width:{lg:"400px",xs:"300px"},
+            width:{lg:"400px",md:"300px",xs:"300px"},
             minHeight: "400px",
             borderRadius: {lg:"10px",xs:"none"},
             margin: "auto",
