@@ -7,24 +7,18 @@
 
 body {
   font-family: var(--font-family);
-  /* Use the defined font-family variable */
   margin: 0;
-  /* Simplified margin */
   padding: 0;
-  /* Simplified padding */
   font-weight: 100;
   text-align: center;
   word-wrap: break-word;
   letter-spacing: 0px;
   list-style: none;
-  /* Changed list-style to none */
   color: var(--primary-color);
-  /* Use the defined primary color variable */
-   /* Responsive font sizes */
-   @media (min-width: 1280px) {
-    /* lg breakpoint */
-     font-weight: 400;
-   }
+
+  @media (min-width: 1280px) {
+    font-weight: 400;
+  }
 }
 
 
@@ -45,8 +39,7 @@ body {
   font-size: 70px;
 
   /* Responsive font sizes */
-   @media (min-width: 1280px) {
-   /* lg breakpoint */
+  @media (min-width: 1280px) {
     font-size: 70px;
     width: 24vw;
   }
@@ -75,23 +68,25 @@ a:hover {
   font-variant: normal;
   font-weight: bold;
   color: rgb(0 74 77);
-   /* Responsive font sizes */
-   @media (min-width: 1280px) {
+
+  /* Responsive font sizes */
+  @media (min-width: 1280px) {
     /* lg breakpoint */
-     font-size: 20px;
-   }
+    font-size: 20px;
+  }
 }
 
 .info-list ul li {
   display: flex;
-  width:100%;
+  width: 100%;
   /* background-color: red; */
   align-items: center;
   justify-content: left;
+
   @media (min-width: 1280px) {
     /* lg breakpoint */
-     width: 25vw;
-   }
+    width: 25vw;
+  }
 }
 
 .listStyle {
@@ -100,8 +95,8 @@ a:hover {
   /* padding: 5px 0; */
   @media (min-width: 1280px) {
     /* lg breakpoint */
-     padding: 10px 0;
-   }
+    padding: 10px 0;
+  }
 
 }
 
@@ -117,36 +112,6 @@ a:hover {
   font-weight: 700;
   color: #3b3b3b;
 }
-
-.cardStyle {
-  padding: 10px;
-}
-
-.proggress {
-  margin-top: 10px;
-}
-
-.class {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 16px;
-  font-weight: 700;
-  color: #3b3b3b;
-
-}
-
-
-.proggress {
-  background-color: #78cc6d;
-  height: 8px;
-  border-radius: 5px;
-  width: 100%
-}
-
-
-
 
 /* css of project.tsx */
 .projectStack {
@@ -232,7 +197,7 @@ a:hover {
   animation: animate 15s linear infinite;
 }
 
-@keyframes  animate {
+@keyframes animate {
   0% {
     background-position-x: 10px;
     background-position-x: -250rem;
@@ -245,7 +210,7 @@ a:hover {
 
 .wave:nth-child(2) {
   opacity: 0.1;
-  animation-delay: 0.2s;
+  animation-delay: 0.3s;
   animation-direction: reverse;
 }
 
@@ -254,7 +219,7 @@ a:hover {
   animation-delay: 5s;
 }
 
-img{
+img {
   width: 100%;
   height: auto;
 }
@@ -282,6 +247,7 @@ img{
   display: inline-block;
   height: 37px;
   width: 15px;
+
   &:before {
     position: absolute;
     content: '';
@@ -303,12 +269,158 @@ img{
     border-radius: 60px 60px 20px 20px;
     transform: scaleX(2);
   }
+
   35% {
     height: 15px;
     border-radius: 50%;
     transform: scaleX(1);
   }
+
   100% {
     top: 0;
   }
+}
+
+/* ----------------skills ------------------ */
+.skills h2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 15px;
+  text-align: left;
+}
+
+.progress-bar {
+  background:#78cc6d ;
+  width: 350px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress-bar div {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+  background:rgb(0 74 77);
+}
+
+.progress-bar div span {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  float: right;
+  margin-top: -25px;
+  margin-right: -10px;
+  color: rgb(0 74 77);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.html {
+  animation: html 3s linear forwards;
+    animation-fill-mode: forwards;
+}
+
+.javascript {
+  animation: javascript 3s linear forwards;
+      animation-fill-mode: forwards;
+
+}
+
+.css {
+  animation: css 3s linear forwards;
+      animation-fill-mode: forwards;
+
+}
+
+.percentCount {
+  animation: percentCount 3s linear forwards;
+      animation-fill-mode: forwards;
+
+}
+.nodejs {
+  animation: nodejs 3s linear forwards;
+      animation-fill-mode: forwards;
+
+}
+.express {
+  animation: express 3s linear forwards;
+      animation-fill-mode: forwards;
+
+}
+.mongodb {
+  animation: mongodb 3s linear forwards;
+      animation-fill-mode: forwards;
+
+}
+.mui {
+  animation: mui 3s linear forwards;
+      animation-fill-mode: forwards;
+
+}
+.react {
+  animation: react 3s linear forwards;
+      animation-fill-mode: forwards;
+
+}
+@keyframes html {
+  100% {
+    width: 95%;
+  }
+   from {left: 0px;background-color: #78cc6d;}
+  to {right: 100px; background-color: rgb(0 74 77);}
+}
+@keyframes react {
+  100% {
+    width: 80%;
+  }
+  from {left: 200px;background-color: #78cc6d;}
+  to {right: 200px; background-color: rgb(0 74 77);}
+}
+
+@keyframes javascript {
+  100% {
+    width: 70%;
+  }
+  from {left: 200px;background-color: #78cc6d;}
+  to {right: 200px; background-color: rgb(0 74 77);}
+}
+
+@keyframes css {
+  100% {
+    width: 80%;
+  }
+  from {left: 200px;background-color: #78cc6d;}
+  to {right: 200px; background-color: rgb(0 74 77);}
+}
+@keyframes nodejs {
+  100% {
+    width: 70%;
+  }
+  from {left: 200px;background-color: #78cc6d;}
+  to {right: 200px; background-color: rgb(0 74 77);}
+}
+@keyframes express {
+  100% {
+    width: 70%;
+  }
+  from {left: 200px;background-color: #78cc6d;}
+  to {right: 200px; background-color: rgb(0 74 77);}
+}
+@keyframes mongodb {
+  100% {
+    width: 60%;
+  }
+  from {left: 200px;background-color: #78cc6d;}
+  to {right: 200px; background-color: rgb(0 74 77);}
+}
+@keyframes mui {
+  100% {
+    width: 90%;
+  }
+  from {left: 200px;background-color: #78cc6d;}
+  to {right: 200px; background-color: rgb(0 74 77);}
 }

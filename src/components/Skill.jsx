@@ -25,164 +25,52 @@ const Skill = () => {
           flexDirection: { md: "row", xs: "column" },
           justifyContent: "center",
           alignItems: "center",
+          gap:5
         }}
       >
         <Card
-          sx={{
-            width: {
-              xs: "80vw",
-              lg: 315,
-            },
-            padding: 5,
-            margin: { lg: 5, xs: 1 },
-          }}
+        sx={{
+          padding:5
+        }}
         >
-          <div id="HTML" className="cardStyle">
-            <div className="class">
-              <span className="class">HTML</span>
-              <div className="percentCount">90%</div>
+          <div className="skills">
+            <h2>HTML</h2>
+            <div className="progress-bar">
+              <div className="html"><span>95%</span></div>
             </div>
-
-            <div
-              className="progressBar"
-              style={{
-                width: "100%",
-                backgroundColor: "rgb(59, 59, 59)",
-                borderRadius: "5px",
-              }}
-            >
-              <div className="proggress" style={{ width: "90%" }}></div>
+            <h2>CSS</h2>
+            <div className="progress-bar">
+              <div className="css"><span>80%</span></div>
             </div>
-          </div>
-          <div id="css" className="cardStyle">
-            <div className="class">
-              <span className="class">CSS</span>
-              <div className="percentCount">80%</div>
+            <h2>Javascript</h2>
+            <div className="progress-bar">
+              <div className="javascript"><span>70%</span></div>
             </div>
-
-            <div
-              className="progressBar"
-              style={{
-                width: "100%",
-                backgroundColor: "rgb(59, 59, 59)",
-                borderRadius: "5px",
-              }}
-            >
-              <div className="proggress" style={{ width: "80%" }}></div>
-            </div>
-          </div>
-          <div id="javascript" className="cardStyle">
-            <div className="class">
-              <span className="class">JavaScript</span>
-              <div className="percentCount">60%</div>
-            </div>
-
-            <div
-              className="progressBar"
-              style={{
-                width: "100%",
-                backgroundColor: "rgb(59, 59, 59)",
-                borderRadius: "5px",
-              }}
-            >
-              <div className="proggress" style={{ width: "60%" }}></div>
-            </div>
-          </div>
-          <div id="react" className="cardStyle">
-            <div className="class">
-              <span>React js</span>
-              <div className="percentCount">75%</div>
-            </div>
-
-            <div
-              className="progressBar"
-              style={{
-                width: "100%",
-                backgroundColor: "rgb(59, 59, 59)",
-                borderRadius: "5px",
-              }}
-            >
-              <div className="proggress" style={{ width: "75%" }}></div>
+            <h2>React js</h2>
+            <div className="progress-bar">
+              <div className="react"><span>80%</span></div>
             </div>
           </div>
         </Card>
         <Card
-          sx={{
-            width: {
-              xs: "80vw",
-              sm: "25vw",
-              ls: 315,
-            },
-            padding: 5,
-            margin: { lg: 5, xs: 1 },
-          }}
+        sx={{padding:5}}
         >
-          <div id="Node js" className="cardStyle">
-            <div className="class">
-              <span className="class">Node JS</span>
-              <div className="percentCount">65%</div>
+            <div className="skills">
+            <h2>Node js</h2>
+            <div className="progress-bar">
+              <div className="nodejs"><span>70%</span></div>
             </div>
-
-            <div
-              className="progressBar"
-              style={{
-                width: "100%",
-                backgroundColor: "rgb(59, 59, 59)",
-                borderRadius: "5px",
-              }}
-            >
-              <div className="proggress" style={{ width: "65%" }}></div>
+            <h2>Express js</h2>
+            <div className="progress-bar">
+              <div className="express"><span>70%</span></div>
             </div>
-          </div>
-          <div id="express js" className="cardStyle">
-            <div className="class">
-              <span className="class">Express js</span>
-              <div className="percentCount">70%</div>
+            <h2>Mongo Db</h2>
+            <div className="progress-bar">
+              <div className="mongodb"><span>60%</span></div>
             </div>
-
-            <div
-              className="progressBar"
-              style={{
-                width: "100%",
-                backgroundColor: "rgb(59, 59, 59)",
-                borderRadius: "5px",
-              }}
-            >
-              <div className="proggress" style={{ width: "70%" }}></div>
-            </div>
-          </div>
-          <div id="mongo db" className="cardStyle">
-            <div className="class">
-              <span className="class">Mongo DB</span>
-              <div className="percentCount">55%</div>
-            </div>
-
-            <div
-              className="progressBar"
-              style={{
-                width: "100%",
-                backgroundColor: "rgb(59, 59, 59)",
-                borderRadius: "5px",
-              }}
-            >
-              <div className="proggress" style={{ width: "55%" }}></div>
-            </div>
-          </div>
-          <div id="mui" className="cardStyle">
-            <div className="class">
-              <span>MUI library</span>
-              <div className="percentCount">80%</div>
-            </div>
-
-            <div
-              className="progressBar"
-              style={{
-                width: "100%",
-                backgroundColor: "rgb(59, 59, 59)",
-                borderRadius: "5px",
-              }}
-            >
-              <div className="proggress" style={{ width: "80%" }}></div>
+            <h2>MUI</h2>
+            <div className="progress-bar">
+              <div className="mui"><span>90%</span></div>
             </div>
           </div>
         </Card>
