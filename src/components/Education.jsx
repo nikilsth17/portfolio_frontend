@@ -42,28 +42,28 @@ const Education = () => {
             educations?.map((item, index) => (
               <TimelineItem key={index}>
                 {isLargeScreen && ( // Render Chip only for large screens
-                  <Chip label={item?.date} sx={{ marginTop: 1 }} />
+                  <Chip className='chips' label={item?.date} sx={{ marginTop: 1,backgroundColor:"#B3CDE0",padding:2 }} />
                 )}
                 <TimelineSeparator>
                   <TimelineDot color="success" sx={{ marginTop: 2, padding:{lg:1,xs:"none"} }} />
                   <TimelineConnector sx={{ background: " rgb(0 74 77)" }} />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Card className='educationCard' sx={{ width: { xs: "85vw", md: "39vw" }, boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" }}>
+                  <Card className='card' sx={{ width: { xs: "85vw", md: "39vw" }, boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" }}>
                     <CardActionArea>
-                      <CardContent sx={{ textAlign: 'left' }}>
-                        {isSmallScreen && (
+                      <CardContent className='card-content' sx={{ textAlign: 'left' }}>
+                        {!isLargeScreen && (
                       <Chip label={item?.date}/>
                         )
                         }
 
-                        <Typography gutterBottom component="div" sx={{fontSize:{lg:"20px",xs:"10px"}}}>
+                        <Typography className='text' gutterBottom component="div" sx={{fontSize:{lg:"20px",xs:"10px"}}}>
                           {item?.collegeName}
                         </Typography>
-                        <Typography variant='h5'>{item?.degree}</Typography>
-                        <Typography variant='h6'>Grade: {item?.grade}</Typography>
-                        <Typography>{item?.location}</Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography className='text' variant='h5'>{item?.degree}</Typography>
+                        <Typography className='text' variant='h6'>Grade: {item?.grade}</Typography>
+                        <Typography className='text'>{item?.location}</Typography>
+                        <Typography className='text' variant="body2" color="text.secondary">
                           {item?.introduction}
                         </Typography>
                       </CardContent>

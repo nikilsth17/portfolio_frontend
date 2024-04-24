@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import About from '../components/About'
 import Skill from '../components/Skill'
 import Experience from '../components/Experience'
@@ -11,6 +11,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 const Home = () => {
+  
   return (
     <>
     <Header/>
@@ -22,6 +23,7 @@ const Home = () => {
     <ReviewSite/>
     <Contact/>
     <Testimonial/>
+    <Footer/>
     </>
   )
 }
