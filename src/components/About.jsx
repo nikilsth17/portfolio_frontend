@@ -9,7 +9,7 @@ import {
   FaInstagramSquare,
   FaLinkedin,
 } from "react-icons/fa";
-import pdfFile from "../assets/pdfFIle/NikilShresthaCV.pdf";
+import pdfFile from "../assets/pdfFIle/CV.pdf"
 
 const openPdfInNewTab = () => {
   window.open(pdfFile, "_blank");
