@@ -6,8 +6,8 @@ import Experience from '../components/Experience'
 import Education from '../components/Education'
 import Project from '../components/Project'
 import ReviewSite from '../components/ReviewSite'
-import Contact from '../components/Contact'
 import MainLayout from '../layout/MainLayout'
+import ContactUs from '../components/ContactUs'
 
 export const mainRoute=[
     {
@@ -44,7 +44,7 @@ export const mainRoute=[
           },
           {
             path:"contact",
-            element:<Contact/>
+            element:<ContactUs/>
           }
 
 

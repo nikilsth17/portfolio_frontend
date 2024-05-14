@@ -41,11 +41,10 @@ const Contact = () => {
   return (
     <Box
       id="contact"
-      sx={{ padding: { lg: 9, xs: 1 }, backgroundColor: "whitesmoke",position: "relative"
+      sx={{ padding: { lg: 9, xs: 1 }, backgroundColor: "whitesmoke"
     }}
     >
       <h1>Contact</h1>
-      <div className="bor-btm-section-header"></div>
       <h3>Feel free to reach out to me for any questions or opportunities!</h3>
 
       <Box
@@ -60,11 +59,8 @@ const Contact = () => {
         <Box
           sx={{
             backgroundColor: " #6497B1",
-            width: "25%",
             height: "400px",
             padding: 1,
-            margin:-4,
-            zIndex:2
           }}
         >
           <Box
@@ -99,10 +95,7 @@ const Contact = () => {
         <Box
           sx={{
             backgroundColor: "#B3CDE0",
-            width: "35%",
-            marginTop:7,
             height: "410px",
-            opacity:0.8
           }}
         >
                 <Typography sx={{paddingLeft:4}}>Feel free to reach out to me for any questions or opportunities!</Typography>

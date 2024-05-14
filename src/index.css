@@ -122,6 +122,7 @@ a:hover {
   gap: 6px;
   height: 50px;
 }
+
 .categorie-item {
   height: 159px;
   background: #fff;
@@ -129,6 +130,7 @@ a:hover {
   -o-transition: all 0.4s;
   transition: all 0.4s;
 }
+
 .categorie-item .ci-text {
   padding: 15px;
   text-align: left;
@@ -139,14 +141,17 @@ a:hover {
 .categorie-item .ci-text h5 {
   color: #000;
 }
+
 .categorie-item:hover {
   background: rgb(0 74 77);
   height: 255px;
 }
+
 .categorie-item:hover .ci-text h5,
 .categorie-item:hover .ci-text p {
   color: #fff;
 }
+
 .categorie-item:hover .ci-text .divider {
   padding: 5px;
   color: #fff;
@@ -175,6 +180,8 @@ a:hover {
 
 /* ===================       Footer     ================================= */
 .container {
+  padding: 0;
+  margin:0;
   position: relative;
   background-color: #DCF0FA;
 }
@@ -241,9 +248,10 @@ img {
 
 @keyframes progress-pf82op {
   100% {
-     inset: 0;
+    inset: 0;
   }
 }
+
 .wrap {
   position: absolute;
   top: 50%;
@@ -308,7 +316,7 @@ img {
 }
 
 .progress-bar {
-  background:#78cc6d ;
+  background: #78cc6d;
   width: 350px;
   height: 10px;
   border-radius: 5px;
@@ -318,7 +326,7 @@ img {
   height: 10px;
   border-radius: 5px;
   width: 0%;
-  background:rgb(0 74 77);
+  background: rgb(0 74 77);
 }
 
 .progress-bar div span {
@@ -336,115 +344,191 @@ img {
 
 .html {
   animation: html 3s linear forwards;
-    animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .javascript {
   animation: javascript 3s linear forwards;
-      animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
 }
 
 .css {
   animation: css 3s linear forwards;
-      animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
 }
 
 .percentCount {
   animation: percentCount 3s linear forwards;
-      animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
 }
+
 .nodejs {
   animation: nodejs 3s linear forwards;
-      animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
 }
+
 .express {
   animation: express 3s linear forwards;
-      animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
 }
+
 .mongodb {
   animation: mongodb 3s linear forwards;
-      animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
 }
+
 .mui {
   animation: mui 3s linear forwards;
-      animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
 }
+
 .react {
   animation: react 3s linear forwards;
-      animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
 }
+
 @keyframes html {
   100% {
     width: 95%;
   }
-   from {left: 0px;background-color: #78cc6d;}
-  to {right: 100px; background-color: rgb(0 74 77);}
+
+  from {
+    left: 0px;
+    background-color: #78cc6d;
+  }
+
+  to {
+    right: 100px;
+    background-color: rgb(0 74 77);
+  }
 }
+
 @keyframes react {
   100% {
     width: 80%;
   }
-  from {left: 200px;background-color: #78cc6d;}
-  to {right: 200px; background-color: rgb(0 74 77);}
+
+  from {
+    left: 200px;
+    background-color: #78cc6d;
+  }
+
+  to {
+    right: 200px;
+    background-color: rgb(0 74 77);
+  }
 }
 
 @keyframes javascript {
   100% {
     width: 70%;
   }
-  from {left: 200px;background-color: #78cc6d;}
-  to {right: 200px; background-color: rgb(0 74 77);}
+
+  from {
+    left: 200px;
+    background-color: #78cc6d;
+  }
+
+  to {
+    right: 200px;
+    background-color: rgb(0 74 77);
+  }
 }
 
 @keyframes css {
   100% {
     width: 80%;
   }
-  from {left: 200px;background-color: #78cc6d;}
-  to {right: 200px; background-color: rgb(0 74 77);}
+
+  from {
+    left: 200px;
+    background-color: #78cc6d;
+  }
+
+  to {
+    right: 200px;
+    background-color: rgb(0 74 77);
+  }
 }
+
 @keyframes nodejs {
   100% {
     width: 70%;
   }
-  from {left: 200px;background-color: #78cc6d;}
-  to {right: 200px; background-color: rgb(0 74 77);}
+
+  from {
+    left: 200px;
+    background-color: #78cc6d;
+  }
+
+  to {
+    right: 200px;
+    background-color: rgb(0 74 77);
+  }
 }
+
 @keyframes express {
   100% {
     width: 70%;
   }
-  from {left: 200px;background-color: #78cc6d;}
-  to {right: 200px; background-color: rgb(0 74 77);}
+
+  from {
+    left: 200px;
+    background-color: #78cc6d;
+  }
+
+  to {
+    right: 200px;
+    background-color: rgb(0 74 77);
+  }
 }
+
 @keyframes mongodb {
   100% {
     width: 60%;
   }
-  from {left: 200px;background-color: #78cc6d;}
-  to {right: 200px; background-color: rgb(0 74 77);}
+
+  from {
+    left: 200px;
+    background-color: #78cc6d;
+  }
+
+  to {
+    right: 200px;
+    background-color: rgb(0 74 77);
+  }
 }
+
 @keyframes mui {
   100% {
     width: 90%;
   }
-  from {left: 200px;background-color: #78cc6d;}
-  to {right: 200px; background-color: rgb(0 74 77);}
+
+  from {
+    left: 200px;
+    background-color: #78cc6d;
+  }
+
+  to {
+    right: 200px;
+    background-color: rgb(0 74 77);
+  }
 }
 
 
 
-.text{
+.text {
   color: #000;
 }
+
 .card {
   background-color: rgb(0, 74, 77);
   text-align: center;
@@ -464,7 +548,7 @@ img {
     height: 100%;
     width: 100%;
 
-    background-color:#6497B1;
+    background-color: #6497B1;
     clip-path: circle(10.4% at 100% 0);
     transition: clip-path 0.5s ease;
   }
@@ -479,10 +563,133 @@ img {
   &:hover {
     &::before {
       clip-path: circle(150% at 100% 0%);
-      background-color:#B3CDE0;
+      background-color: #B3CDE0;
       color: #fff;
     }
 
   }
 }
 
+
+/*-------------- Contact  ---------------------------*/
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #095a55;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #fff38e;
+}
+
+.container {
+  position: relative;
+  min-width: 1100px;
+  min-height: 530px;
+  display: flex;
+  z-index: 999;
+  background: none;
+}
+
+.container .contactInfo {
+  position: absolute;
+  top: 40px;
+  width: 300px;
+  height: 70%;
+  background: #095a55;
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 25px rgb(0, 0, 0, 0.15);
+}
+
+
+.container .contactForm {
+  position: absolute;
+  padding: 90px 50px;
+  padding-left: 250px;
+  margin-left: 150px;
+  width: 650px;
+  height: 58vh;
+  background: #fff;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+
+}
+
+@media (max-width:1200px) {
+  .container {
+    width: 90%;
+    min-width: auto;
+    margin: 20px;
+  }
+
+  .container .contactInfo {
+    height: 500px;
+    position: relative;
+    box-shadow: none;
+
+  }
+
+  .container .contactForm {
+    position: relative;
+    width: calc(100% - 350px);
+    padding-left: 0;
+    margin-left: 0;
+    padding: 40px;
+    height: 550px;
+  }
+
+}
+
+@media (max-width:991px) {
+  section {
+    background: #fff38e;
+    flex-direction: column;
+  }
+
+  section::before {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .container .contactForm {
+    width: 100%;
+    height: auto;
+  }
+
+  .container .contactInfo {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+  }
+}
+
+@media (max-width:600px){
+  .container .contactForm{
+    width: 80vw;
+    padding: 25px;
+  }
+  .container .contactInfo{
+    padding: 25px;
+    width: 80vw ;
+    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+}

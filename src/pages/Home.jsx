@@ -4,11 +4,11 @@ import Skill from '../components/Skill'
 import Experience from '../components/Experience'
 import Education from '../components/Education'
 import Testimonial from '../components/Testimonial'
-import Contact from '../components/Contact'
 import ReviewSite from '../components/ReviewSite'
 import Project from '../components/Project'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import ContactUs from '../components/ContactUs'
 
 const Home = () => {
   
@@ -21,7 +21,7 @@ const Home = () => {
     <Project/>
     <Education/>
     <ReviewSite/>
-    <Contact/>
+    <ContactUs/>
     <Testimonial/>
     <Footer/>
     </>
