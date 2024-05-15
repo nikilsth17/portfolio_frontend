@@ -5,7 +5,7 @@ import { FaFacebookSquare, FaGithub, FaInstagramSquare, FaLinkedin } from 'react
 const Footer = () => {
   return (
 
-  <div className="container">
+  <div className="footer-container">
   <div className="wave"></div>
   <div className="wave"></div>
   <div className="wave"></div>

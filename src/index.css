@@ -1,12 +1,8 @@
 :root {
-  --primary-color: black;
-  /* Define your primary color variable */
-  --font-family: 'Mulish', sans-serif;
-  --font-family-poppins: 'Poppins';
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: 'Mulish', sans-serif;
   margin: 0;
   padding: 0;
   font-weight: 100;
@@ -14,7 +10,7 @@ body {
   word-wrap: break-word;
   letter-spacing: 0px;
   list-style: none;
-  color: var(--primary-color);
+  color: black;
 
   @media (min-width: 1280px) {
     font-weight: 400;
@@ -179,7 +175,7 @@ a:hover {
 
 
 /* ===================       Footer     ================================= */
-.container {
+.footer-container {
   padding: 0;
   margin:0;
   position: relative;
@@ -577,7 +573,7 @@ section {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #095a55;
+  background:#6497B1;
 }
 
 section::before {
@@ -586,7 +582,7 @@ section::before {
   left: 0;
   width: 50%;
   height: 100%;
-  background: #fff38e;
+  background: #B3CDE0  ;
 }
 
 .container {
@@ -600,9 +596,10 @@ section::before {
 
 .container .contactInfo {
   position: absolute;
-  top: 40px;
+  margin-left: 50px;
+  top: 35px;
   width: 300px;
-  height: 70%;
+  height: 60%;
   background: #095a55;
   z-index: 1;
   padding: 40px;
@@ -610,17 +607,17 @@ section::before {
   justify-content: center;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 20px 25px rgb(0, 0, 0, 0.15);
+  box-shadow: 0 20px 25px rgba(175, 68, 68, 0.15);
 }
 
 
 .container .contactForm {
   position: absolute;
-  padding: 90px 50px;
-  padding-left: 250px;
-  margin-left: 150px;
-  width: 650px;
-  height: 58vh;
+  padding: 10px;
+  padding-left: 150px;
+  margin-left: 250px;
+  width: 600px;
+  height: 74vh;
   background: #fff;
   box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
 
