@@ -46,15 +46,16 @@ const ContactUs = () => {
     },
   });
   return (
-    <Box id="contact" sx={{ paddingTop: { md: 9, xs: 2, lg: 9 } }}>
+    <Box id="contact" sx={{ paddingTop: { md: 9, xs: 1, lg: 9 },backgroundColor: "whitesmoke" }}>
       <section>
         <div className="container">
           <div className="contactInfo">
             <Typography>
               Feel free to reach out to me for any questions or opportunities!
             </Typography>
+            <div style={{display:"flex",flexDirection:"column",gap:20,marginTop:10}}>
             <Box sx={{ display: "flex", flexDirection: "row", gap: 2 }}>
-              <Avatar variant="rounded" sx={{ width: 54, height: 54 }}>
+              <Avatar variant="rounded" sx={{ width: 54, height: 54,background:"#D3D3D3",color:"#000" }}>
                 <SlLocationPin size={24} />
               </Avatar>
               <Typography sx={{ alignItems: "center", textAlign: "left" }}>
@@ -62,7 +63,7 @@ const ContactUs = () => {
               </Typography>
             </Box>
             <Box sx={{ display: "flex", flexDirection: "row", gap: 2 }}>
-              <Avatar variant="rounded" sx={{ width: 54, height: 54 }}>
+              <Avatar variant="rounded" sx={{ width: 54, height: 54,background:"#D3D3D3",color:"#000"  }}>
                 <SiMinutemailer size={24} />
               </Avatar>
               <Typography sx={{ alignItems: "center", textAlign: "left" }}>
@@ -70,13 +71,15 @@ const ContactUs = () => {
               </Typography>
             </Box>
             <Box sx={{ display: "flex", flexDirection: "row", gap: 2 }}>
-              <Avatar variant="rounded" sx={{ width: 54, height: 54 }}>
+              <Avatar variant="rounded" sx={{ width: 54, height: 54,background:"#D3D3D3",color:"#000"  }}>
                 <MdLocalPhone size={24} />
               </Avatar>
               <Typography sx={{ alignItems: "center", textAlign: "left" }}>
                 +977 9823525431
               </Typography>
             </Box>
+            </div>
+           
             <Divider variant="middle" sx={{ padding: 1 }} />
 
             <Box
@@ -89,10 +92,10 @@ const ContactUs = () => {
                 gap: 2,
               }}
             >
-              <FaFacebookSquare size={24} color="#fff"/>
-              <FaInstagramSquare size={24} color="#fff"/>
-              <FaLinkedin size={24} color="#fff"/>
-              <FaGithub size={24} color="#fff"/>
+              <FaFacebookSquare size={24} color="#313638" />
+              <FaInstagramSquare size={24} color="#313638" />
+              <FaLinkedin size={24} color="#313638" />
+              <FaGithub size={24} color="#313638" />
             </Box>
           </div>
 

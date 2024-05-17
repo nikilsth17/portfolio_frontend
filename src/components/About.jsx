@@ -99,23 +99,22 @@ const About = () => {
        */}
       <Box
         sx={{
-          width: { lg: "none", xs: "95vw" },
+          width: { lg: "none", xs: "97vw" },
           display: "flex",
           flexDirection: "column",
           flexWrap: { lg: "none", xs: "wrap" },
           height: "70vh",
-          // marginTop: 1,
           padding: 1,
-          boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
+          boxShadow: {lg:"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",xs:"none"},
           backgroundColor: "whitesmoke",
-          borderRadius: 2,
+          borderRadius: {lg:2,xs:"none"}
         }}
       >
         <Stack
           sx={{
             display: "flex",
             flexDirection: "row",
-            padding: { lg: 2, xs: 1 },
+            padding: { lg: 2, xs: 0 },
             gap: { lg: 10, xs: 5 },
           }}
         >
